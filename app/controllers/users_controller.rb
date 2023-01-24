@@ -6,8 +6,6 @@ class UsersController < ApplicationController
 
     fav_artists = get_artists_from_liked_songs(my_user)
     follow_artists_batch(my_user, fav_artists)
-
-    puts "Done!"
   end
 
   # Gets all of the user's favorite artists based on their liked songs.
