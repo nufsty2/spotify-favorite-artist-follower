@@ -85,8 +85,6 @@ GEM
     crass (1.0.6)
     date (3.3.3)
     debug (1.7.1)
-      irb (>= 1.5.0)
-      reline (>= 0.3.1)
     domain_name (0.5.20190701)
       unf (>= 0.0.5, < 1.0.0)
     dotenv (2.8.1)
@@ -105,9 +103,6 @@ GEM
     importmap-rails (1.1.5)
       actionpack (>= 6.0.0)
       railties (>= 6.0.0)
-    io-console (0.6.0)
-    irb (1.6.2)
-      reline (>= 0.3.0)
     jbuilder (2.11.5)
       actionview (>= 5.0.0)
       activesupport (>= 5.0.0)
@@ -141,6 +136,8 @@ GEM
       net-protocol
     netrc (0.11.0)
     nio4r (2.5.8)
+    nokogiri (1.14.0-arm64-darwin)
+      racc (~> 1.4)
     nokogiri (1.14.0-x86_64-darwin)
       racc (~> 1.4)
     oauth2 (2.0.9)
@@ -194,8 +191,6 @@ GEM
       zeitwerk (~> 2.5)
     rake (13.0.6)
     regexp_parser (2.6.2)
-    reline (0.3.2)
-      io-console (~> 0.5)
     rest-client (2.0.2)
       http-cookie (>= 1.0.2, < 2.0)
       mime-types (>= 1.16, < 4.0)
@@ -221,6 +216,7 @@ GEM
       actionpack (>= 5.2)
       activesupport (>= 5.2)
       sprockets (>= 3.0.0)
+    sqlite3 (1.6.0-arm64-darwin)
     sqlite3 (1.6.0-x86_64-darwin)
     stimulus-rails (1.2.1)
       railties (>= 6.0.0)
@@ -254,6 +250,7 @@ GEM
     zeitwerk (2.6.6)
 
 PLATFORMS
+  arm64-darwin-22
   x86_64-darwin-21
 
 DEPENDENCIES
@@ -276,7 +273,7 @@ DEPENDENCIES
   webdrivers
 
 RUBY VERSION
-   ruby 3.1.2p20
+   ruby 3.2.1p31
 
 BUNDLED WITH
    2.3.22
