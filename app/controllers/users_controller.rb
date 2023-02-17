@@ -42,11 +42,23 @@ class UsersController < ApplicationController
     artists.each do |artist|
       if artists_to_follow.size == BATCH_SIZE or follow_count == artists.size
         user.follow(artists_to_follow)
+        log_artists(artists_to_follow)
         artists_to_follow = []
       else
         artists_to_follow.push(artist)
         follow_count += 1
       end
     end
+  end
+
+  # Puts out a list of artists to the terminal
+  #
+  # @param {RSpotify::Artist[]} artists: a list of artists
+  def log_artists(artists)
+    puts "\nFollowed these artists:"
+    artists.each do |artist|
+      puts "- #{artist.name}"
+    end
+    puts "\n"
   end
 end
